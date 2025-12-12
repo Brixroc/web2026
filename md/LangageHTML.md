@@ -1,0 +1,17 @@
+### Des notions de HTML 
+ 
+ 1 . HTML
+ HyperText Markup Language ( langage de balise hypertexte)
+
+ => un fichier `.html` c'est d'abord du texte
+ => il est écrit par un `développeur` (exemple écrit avec VSCode)
+ => il est vu par un utilisateur ( avec Firefox par exemple)
+
+
+  Une balise html s'écrit : `<mBalise></mBalise>`
+
+  **Exemple**: `<h1></h1>`
+
+  Le texte s'écrit **entre les balises**
+
+  **Exemple** : `<h1>Mon texte</h1>`
