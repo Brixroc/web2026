@@ -15,3 +15,7 @@
   Le texte s'écrit **entre les balises**
 
   **Exemple** : `<h1>Mon texte</h1>`
+
+  Il existe aussi des balises orphelines : `<!DOCTYPE html>`,`<br>`,`<img>`...
+
+  Référence : Mozilla [https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
