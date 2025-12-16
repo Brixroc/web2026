@@ -31,3 +31,24 @@
   - `<ul></ul>`      : pour faire des listes sans ordre
   - `<ol></ol>`       : pour faire des listes avec ordre
   - `<li></li>`       : pour faire des iteme de liste
+  - `<img src=""></img>`  : pour ajouter une image
+
+  Pour trouver le chemin vers un fichier, on peut regarder:
+  - dans le dossier courant avec `./`
+  - dans un dossier exterieur avec `../`
+
+  2. CSS 
+  Cascading Style Sheet : page de style en cascade
+  On peut ecrire du CSS : 
+  - directement dans le fichier HTML entre les balises `<style></style>`
+  - dans un fichier `CSS`
+
+  Pour écrire du CSS, il faut un sélecteur (nom d'une balise ou d'une clss),des accolades, des propriétés, des valeurs.
+
+  ```CSS
+  selecteur{
+    propriete1 : valeur1;
+    propriete2 : valeur2;
+    ...
+  }
+  ```
