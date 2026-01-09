@@ -52,4 +52,8 @@
     ...
   }
   ```
-  (modification pour le garder  )
+  Il existe plus de 500 propriétés et encore d'avantage de valeu possible. Cependant, les valeurs sont souvent:
+  - une couleur
+  - une taille
+  
+  Remarque : On trouve toute les propriété sur le site des dévelopeur de Modzilla 
