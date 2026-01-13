@@ -39,3 +39,10 @@
             border-color: red;
             
         }
+
+     #login{
+    border-style:solid;
+    border-width:1px;
+    width:30%;
+    margin-left:35%;
+}
