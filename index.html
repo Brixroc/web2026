@@ -1,51 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang ="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Débuter en html</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <!--Ceci est un commentaire-->
-    <h2>titre de niveau 2</h2>
-    <h1>titre de niveau 1</h1>
-    <div class="boite1">
-    <p class="deux">On remarque que le navigateur créé un saut de ligne entre les titres, les paragraphes.
-        Pour un saut de ligne dans un paragraphe, il faut un break.<br>
-        Pour afficher des symboles html dans une page, il existe des codes HTML &lt;br&gt;</p>
-    <p>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style2.css">
+
+    <head>
+        </head>
+        <body>
         
+        </body>
+        <h1>jouons avec JS</h1>
+        <from action="">
+            <input type="range" name="range" id="range" value="69">
+            <input type="texte" name="texte" id="texte" value="Brixroc">
+            <input type="button" value="clique" id="btn">
+            <input type="checkbox" name="check" id="check1" value="checked">
+            <input type="password" name="pass" value="pass">
 
-
-        On peut faire des liens avec la balise&lt;a&gt;
-        <a href="https://www.bugatti.com/fr">
-            Voici mon lien
-        </a>
-    </p>
-    </div>
-    <p>
-        Voici une liste sans ordre:
-        <ul>
-            <li>pain</li>
-            <li>lait</li>
-            <li>frommage</li>
-        </ul>
-        voici une liste avec ordre:
-        <ol>
-            <li>mettre le frommage sur le pain</li>
-            <li>manger le pain</li>
-            <li>boire le lait</li>
-        </ol>
-    </p>
-    <img src="./img/bolide.jpg">
-
-    <form action="" method="get">
-    <input type="text" name="login" id="login">
-    <input onclick="console.log(2+2)" type="button" value="Envoyer" id="btn1">
-
-
-    </form>
-   
-</body>
-</html>
+            </from>
+            <script>
+                let titre =document.querySelector("h1");
+                console.log(titre);
+                console.log(titre.textContent);
+                texte.textContent = "Nouveau titre avec JS";
+                let pression = false;
+                let bouton = document.getElementById("btn");
+                bouton.addEventListener("click",function() {
+                    if (pression == false) {titre.textContent = "Nouveau titre avec JS"; titre.style.color ="red"; titre.style.fontSize="40px"});
+                    pression==true;
+                }
+                else{
+                    titre.texteContent = "jouons avec JS";
+                    titre.style.color= "blue";
+                    titre.style.fontSize="16px";
+                    pression == false
+                }
+                titre.addEventListener("mouseover",function(){titre.style.color="purple"});
+            //let curseur = document.querySelector("input");
+            //console.log(curseur);
+            //console.log(curseur.value);
+            //curseur.addEventListener("change", function(){console.log(curseur.value);})
+            //let texte=document.getElementById("texte");
+            //texte.addEventListener("change", function(){console.log(texte.value)})
+            //let curseur = document.getElementById("texte");
+            //console.log(curseur);
+            //console.log(curseur.value);
+            //let box = document.getElementById("chek1");
+            //console.log(box.checked);
+            </script>
+        </body>
+        </html>
+        
