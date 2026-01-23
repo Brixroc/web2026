@@ -77,6 +77,30 @@
 
  3. Javascript(JS)
 
+
+
+ Ctrl + Shift + i pour obtenir la console
+
+Il s'agit d'un langage de programmation comme Python mais initialement dédié au WEB.
+
+C'est un langage prévu pour interagir avec une page HTML : le document peut se représenter ainsi:
+
+Imagesimplifiée du DOM (Document Object Model)
+
+window
+├── alert()
+└── document
+    ├── getElementById()
+    ├── querySelector()
+    │       ↓
+    │   élément HTML
+    │       ├── innerHTML
+    │       ├── style
+    │       │     ├── color
+    │       │     ├── backgroundColor
+    │       │     └── display
+    │       └── addEventListener()
+
 C'est le langage de programmation qui permet de gérer les éléments intéractifs d'une page HTML.
 
 Historiquement, les éléments d'interactions étaient placés dans un formulaire `<form></form>` pour renvoyer des informations au serveur.
