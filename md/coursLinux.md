@@ -61,7 +61,9 @@ Syntaxe générale: `nom --option argument` ou `nom -option argument`
 |`pwd`|affiche le nom du dossier courant|`$ pwd`|
 |`cd`|changer de répertoire courant|`$ cd./mondossier   `|
 |`cp`|copie une source vers une direction|`$ cp ./monfichier ./mondossier`|
-|`rm`|supprimer des fichiers ou des dossiers|`$ rm ./monfichier `|
+|`rm`|supprimer des fichiers ou des dossiers|`$ rm -r./mondossier `|
+|`mv`|couper/renommer des fichiers|`$ mv ./monfichier ./nouveaunom `|
+|`chmod`|modifie les permissions|`$ chmod 777 ./monfichier `|
 ----------------------------
 Pour éditer un fichier plusieurs commandes/éditeurs sont possibles : 
 - `nano`(dans ce cour)
@@ -91,3 +93,26 @@ $ cp cheminFichierSource cheminDossierDestination/nouveaunom
 
 ----------------------
 La commande `rm-r` permet de supprimer un dossier et tout se qu'il contient
+--------------------
+
+Il est possible d'écrire dans un fichier portant l'extantion `.sh` par défaut .Pour éxecuter ce fichier 
+```bash
+./monfichier.sh
+```
+Par défaut, les fichiers linux ne sont pas exécutable.Quand un fichier(dossier) est crée, il possède des **permissions** qui peuvent etre différentes pour : 
+- `user` c'est le propriétaire du fichier
+- `group` groupe d'utilisateur défini par `user`
+- `other` le reste du monde
+
+Les permissions sur un fichier(dossier) sont:
+- *read* : `r` valeur = 4
+- *write* : `w` valeur = 2
+- *execute* : `x` valeur = 1
+
+La commande `chmod nnn` permet de modifier les permissions ; il existe une autre syntaxe avec les lettres `u,g,o` (usre, groupe, other) et les symboles `+,-` pour ajouter ou retirer des droits.
+```bash
+chmod 754 ./monfichier.sh #rwx pour user, rx pour groupe et r pour other
+```
+```bash
+chmod u-x,g-x,o+x ./monfichier.sh #retire x pour user et groupe, ajoute w pour other
+```
