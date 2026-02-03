@@ -64,6 +64,10 @@ Syntaxe générale: `nom --option argument` ou `nom -option argument`
 |`rm`|supprimer des fichiers ou des dossiers|`$ rm -r./mondossier `|
 |`mv`|couper/renommer des fichiers|`$ mv ./monfichier ./nouveaunom `|
 |`chmod`|modifie les permissions|`$ chmod 777 ./monfichier `|
+|`head`|affiche les premieres lignes d'un fichier|`$ head -n 3 ./monfichier `|
+|`tail`|affiche les dernieres lignes d'un fichier|`$ tail -n 3 ./monfichier `|
+|`grep`|recherche une chaine de caractère|`$ grep chaine ./monfichier `|
+|`echo`|retourne une chaine de caractère sur le terminal|`$ echo "chaine" `|
 ----------------------------
 Pour éditer un fichier plusieurs commandes/éditeurs sont possibles : 
 - `nano`(dans ce cour)
@@ -116,3 +120,23 @@ chmod 754 ./monfichier.sh #rwx pour user, rx pour groupe et r pour other
 ```bash
 chmod u-x,g-x,o+x ./monfichier.sh #retire x pour user et groupe, ajoute w pour other
 ```
+
+-------------------------------
+L'opérateur `>` ou `>>` permet de rediriger la sortie vers un fichier ; si le fichier n'existe pas alors il est crée
+```bash
+commande > fichier
+```
+Le signe `>>` permet de ne pas écraser le contenu du fichier. Il est fréquant d'utiliser `echo` avec l'option `-e` pour remplir un fichier.
+
+```bash
+echo -e "code en python
+'''''''
+'''''''"> fichier.py
+```
+La commande `python` suivie du chemin vers un fichier `.py` execute du code python
+ # Ex1
+ (https://codex.forge.apps.education.fr/exercices/course_cycliste/)[https://codex.forge.apps.education.fr/exercices/course_cycliste/]
+
+ # Ex2
+ (https://codex.forge.apps.education.fr/exercices/syracuse/)[https://codex.forge.apps.education.fr/exercices/syracuse/]
+ 
