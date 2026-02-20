@@ -25,3 +25,5 @@ def syracuse(n):
     reponse = []
     while n != 1:
         
+
+###############################
